@@ -2,6 +2,7 @@
  *File: 3-puts.c
  * Auth:halima
  */
+#include "main.h"
 #include <stddef.h>
 #include <stdio.h>
 /**
