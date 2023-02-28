@@ -1,9 +1,9 @@
 /*
  * File: 2-strlen.c
- *  halima
+ * Auth:  halima
  */ 
-size_t _strlen(const char *str)
-{
+size_t_strlen(const char *str)
+
 	size_t length = 0;
 
 	while (*str++)
