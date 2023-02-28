@@ -1,7 +1,8 @@
 /*
  * File: 2-strlen.c
  * Auth: halima
- */ 
+ */
+#include <stddef.h>
 
 /**
  * _strlen - Returns the length of a string.
