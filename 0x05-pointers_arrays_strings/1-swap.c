@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /*
  * File: 1-swap.c
