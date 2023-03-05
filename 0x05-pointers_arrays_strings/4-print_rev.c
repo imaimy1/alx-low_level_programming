@@ -1,3 +1,4 @@
+#include "main.h"
 /*
  * File: 4-print_rev.c
  * Auth: halima
