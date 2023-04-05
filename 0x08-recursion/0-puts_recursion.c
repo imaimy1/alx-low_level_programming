@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * auth: halima
+ * @s: string
  */
 
 void _puts_recursion(char *s)
