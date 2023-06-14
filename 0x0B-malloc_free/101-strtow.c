@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * free_grid - free grid.
+ * _free_grid - free grid.
  * @grid: input
  * @height: input
  */
-void free_grid(char **grid, unsigned int height)
+void _free_grid(char **grid, unsigned int height)
 {
 	if (grid != NULL && height != 0)
 	{
@@ -47,7 +47,7 @@ char **strtow(char *str)
 				x[i] = malloc((c - a + 2) * sizeof(char));
 				if (x[i] == NULL)
 				{
-					free_grid(x, i);
+					_free_grid(x, i);
 					return (NULL);
 				}
 				break;
