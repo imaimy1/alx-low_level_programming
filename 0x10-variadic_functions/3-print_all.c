@@ -66,8 +66,6 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *separator = "";
 	unsigned int i, j;
-	
-
 	f ps[] = {
 		{"c", print_c},
 		{"i", print_i},
