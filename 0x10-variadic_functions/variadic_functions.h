@@ -10,14 +10,14 @@ void print_all(const char * const format, ...);
 
 /**
  * struct format - the data type of a format.
- * @op: the format.
+ * @print: the format.
  * @f: the function.
  *
  */
 
 typedef struct format
 {
-	char *op;
+	char *print;
 	void (*f)(va_list all);
 } f;
 #endif
