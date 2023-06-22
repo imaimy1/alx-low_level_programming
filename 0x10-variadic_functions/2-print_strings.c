@@ -12,30 +12,32 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i = 0;
-	va_list ar;
+	va_list stg;
+	unsigned int i;
 	char *st;
 
-	if (n > 0)
+	if (separator == NULL)
 	{
-		va_start(ar, n);
-
-		while (i < n)
-		{
-			st = va_arg(ar, char *);
-			if (st == NULL)
-				printf("%s", "(nil)");
-			else
-				printf("%s", st;
-
-			if (i != n - 1 && separator != NULL)
-				printf("%s", separator);
-
-			i++;
-		}
-
-		va_end(ar);
+		separator = "";
 	}
 
+	va_start(stg, n);
+
+	for (i = 0; i < n; i++)
+	{
+		st = va_arg(stg, char *);
+		if (st == NULL)
+		{
+			printf("(nil)");
+			break;
+		}
+		printf("%s", st);
+		if (n == i + 1)
+		{
+			break;
+		}
+		printf("%s", separator);
+	}
 	printf("\n");
+	va_end(stg);
 }
